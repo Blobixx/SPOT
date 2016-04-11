@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="horizontal" >
+
+    
+    <CheckBox android:id="@+id/checkbox_amis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:paddingBottom="10dp"           
+            android:paddingTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+        android:onClick="onCheckboxClicked"/>
+
+        <ImageView
+            android:id="@+id/maphoto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingBottom="10dp"
+            android:src="@drawable/shodomodo"           
+            android:paddingTop="10dp"
+             /> 
+
+	
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <EditText
+            android:id="@+id/pseudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"           
+            android:paddingTop="10dp"
+                    android:textSize="9sp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+            android:hint="pseudo" />
+
+        <EditText
+            android:id="@+id/nombreamis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"           
+            android:paddingTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+                    android:textSize="7sp"
+            android:hint="nbreamis" />
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>
