@@ -4,14 +4,26 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Spinner;
+import android.widget.ArrayAdapter;
+
 
 
 public class AjoutEv extends Activity {
+
+    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajout_ev);
+
+        spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
+                R.array.categories_arrays, R.layout.spinner_item);
+
+        adapter.setDropDownViewResource(R.layout.spinner_droptown_item);
+        spinner.setAdapter(adapter);
     }
 
 
@@ -36,4 +48,6 @@ public class AjoutEv extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

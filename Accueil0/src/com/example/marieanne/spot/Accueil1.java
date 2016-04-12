@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.content.Intent;
 
 
 public class Accueil1 extends Activity {
@@ -35,5 +37,14 @@ public class Accueil1 extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goToListEvent(View view) {
+        Intent intentSeCo = new Intent(Accueil1.this, ListEv.class);
+        startActivity(intentSeCo);
+    }
+    public void goToAddEvent(View view) {
+        Intent intentSeCo = new Intent(Accueil1.this, AjoutEv.class);
+        startActivity(intentSeCo);
     }
 }

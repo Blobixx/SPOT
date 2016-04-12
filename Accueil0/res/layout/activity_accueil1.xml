@@ -40,7 +40,8 @@
         		android:scaleType="fitCenter"
 				android:src="@drawable/art"
                 android:background="@drawable/contour"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:onClick="goToListEvent"/>
 
             <ImageButton
                 android:id="@+id/balade"
@@ -57,7 +58,8 @@
         		android:scaleType="fitCenter"
                 android:src="@drawable/balade"
                 android:background="@drawable/contour"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:onClick="goToListEvent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -81,7 +83,8 @@
         		android:scaleType="fitCenter"
                 android:src="@drawable/resto"
                 android:background="@drawable/contour"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:onClick="goToListEvent"/>
 
             <ImageButton
                 android:id="@+id/bar"
@@ -98,7 +101,8 @@
         		android:scaleType="fitCenter"
                 android:src="@drawable/bar"
                 android:background="@drawable/contour"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:onClick="goToListEvent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -122,7 +126,8 @@
         		android:scaleType="fitCenter"
                 android:src="@drawable/concert"
                 android:background="@drawable/contour"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:onClick="goToListEvent"/>
 
             <ImageButton
                 android:id="@+id/shopping"
@@ -139,7 +144,8 @@
         		android:scaleType="fitCenter"
                 android:src="@drawable/shopping"
                 android:background="@drawable/contour"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:onClick="goToListEvent"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -153,6 +159,7 @@
         android:gravity="center"
         android:text="@string/Plus"
         android:textColor="#000000"
-        android:textSize="35dp" />
+        android:textSize="35dp"
+        android:onClick="goToAddEvent"/>
 
 </RelativeLayout>

@@ -39,6 +39,19 @@
     <string name="creation">    Créer mon compte    </string>
     <string name="email">    E-Mail    </string>
     <string name="Plus">    +    </string>
+    <string name="Recherche">  #  Mots-clés   </string>
+    <string name="titre">  TITRE   </string>
+    <string name="description">  Description ... </string>
+
+    <string name="spinner_title"> Catégorie </string>
+    <string-array name="categories_arrays">
+        <item>Art et Culture</item>
+        <item>Ballade</item>
+        <item>Restaurant</item>
+        <item>Bar</item>
+        <item>Concert</item>
+        <item>Shopping</item>
+    </string-array>
 
 
 </resources>
