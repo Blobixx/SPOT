@@ -45,6 +45,8 @@
             android:layout_marginLeft="20dp"
             android:id="@+id/textView"
             android:text="MAYANE"
+            android:textColor="#2b2b2b"
+            android:textStyle="bold"
             />
 
 

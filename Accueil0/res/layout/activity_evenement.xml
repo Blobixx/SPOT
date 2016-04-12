@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDF1B8"
+    android:background="#efefef"
     android:orientation="vertical" 
     tools:context="com.example.marieanne.spot.Evenement" >
 <LinearLayout
@@ -14,9 +14,11 @@
         android:id="@+id/editText1"
         android:layout_width="249dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:ems="10"
         android:text="@string/nomEvent"
-        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textColor="#6D071A"
         android:textSize="25sp" />
       
     <ImageButton
@@ -55,6 +57,7 @@
 
             <TextView
                 android:id="@+id/editText2"
+                android:layout_marginTop="10dp"
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.09"
@@ -68,7 +71,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:background="#efefef"
          >
 
         <Button
@@ -76,21 +79,24 @@
             android:layout_width="106dp"
             android:layout_height="match_parent"
             android:text="@string/info"
-            android:background="#C8AD7F" />
+            android:textColor="#efefef"
+            android:background="#2b2b2b" />
         
         <Button
             android:id="@+id/button2"
             android:layout_width="106dp"
             android:layout_height="match_parent"
             android:text="@string/prix"
-            android:background="#C8AD7F" />
+            android:textColor="#efefef"
+            android:background="#2b2b2b" />
         
         <Button
             android:id="@+id/button3"
             android:layout_width="107dp"
             android:layout_height="match_parent"
             android:text="@string/lieu"
-            android:background="#C8AD7F" />
+            android:textColor="#efefef"
+            android:background="#2b2b2b" />
         
     </LinearLayout>
 
