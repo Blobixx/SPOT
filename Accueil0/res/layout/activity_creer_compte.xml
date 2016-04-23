@@ -16,25 +16,25 @@
         android:layout_alignLeft="@+id/eMail"
         android:layout_alignParentTop="true"
         android:layout_marginTop="35dp"
-        android:background="#2b2b2b"
+        android:background="#d0d0d0"
         android:hint="@string/identifiant"
         android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:textColor="#2b2b2b"
+        android:textColorHint="#2b2b2b" />
 
     <EditText
         android:id="@+id/eMail"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/motDePasse"
+        android:layout_alignLeft="@+id/eMail"
         android:layout_below="@+id/identifiant"
         android:layout_marginTop="33dp"
-        android:background="#2b2b2b"
+        android:background="#d0d0d0"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:textColor="#2b2b2b"
+        android:textColorHint="#2b2b2b" />
 
     <EditText
         android:id="@+id/motDePasse"
@@ -43,11 +43,11 @@
         android:layout_alignLeft="@+id/motDePasse"
         android:layout_below="@+id/eMail"
         android:layout_marginTop="33dp"
-        android:background="#2b2b2b"
+        android:background="#d0d0d0"
         android:hint="@string/motDePasse"
         android:inputType="textPassword"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:textColor="#2b2b2b"
+        android:textColorHint="#2b2b2b" />
 
     <EditText
         android:id="@+id/confirmation"
@@ -56,11 +56,11 @@
         android:layout_below="@+id/eMail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="94dp"
-        android:background="#2b2b2b"
+        android:background="#d0d0d0"
         android:hint="@string/confirmation"
         android:inputType="textPassword"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:textColor="#2b2b2b"
+        android:textColorHint="#2b2b2b" />
 
     <Button
         android:id="@+id/creation"
@@ -68,11 +68,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/button"
+        android:background="@drawable/boutonrond2"
         android:onClick="goToPageP"    
         android:layout_marginBottom="28dp"
         android:text="@string/creation"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#efefef"/>
 
     <CheckBox
         android:id="@+id/acceptation"
@@ -81,8 +81,8 @@
         android:layout_above="@+id/creation"
         android:layout_alignLeft="@+id/confirmation"
         android:layout_marginBottom="41dp"
-        android:background="#2b2b2b"
+        android:background="#d0d0d0"
         android:text="@string/textBox"
-        android:textColor="#FFFFFF" />
+        android:textColor="#2b2b2b" />
 
 </RelativeLayout>

@@ -32,8 +32,8 @@
     <string name="identifiant">Identifiant</string>
     <string name="title">SPOT</string>
     <string name="motDePasse">Mot de passe</string>
-    <string name="connexion">   Connexion   </string>
-    <string name="inscription">   Inscription   </string>
+    <string name="connexion">     Connexion     </string>
+    <string name="inscription">     Inscription     </string>
     <string name="confirmation">Confirmation</string>
     <string name="textBox">En cliquant ici, j\'accepte les conditions d\'utilisation</string>
     <string name="creation">    Créer mon compte    </string>

@@ -2,6 +2,7 @@ package com.example.marieanne.spot;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import com.example.marieanne.spot.R.drawable;
 
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import android.app.AlertDialog;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
@@ -25,7 +27,7 @@ public class ListAmis extends Activity {
         setContentView(R.layout.activity_list_amis);
     }*/
     
-
+    private ListView listAmis;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,50 +42,20 @@ public class ListAmis extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_amis);
- 
-        //Récupération de la listview créée dans le fichier main.xml
-        maListViewPerso = (ListView) findViewById(R.id.listviewamis);
- 
-        //Création de la ArrayList qui nous permettra de remplir la listView
-        ArrayList<HashMap<String, String>> listItem = new ArrayList<HashMap<String, String>>();
- 
-        //On déclare la HashMap qui contiendra les informations pour un item
-        HashMap<String, String> map;
- 
-        /*//Création d'une HashMap pour insérer les informations du premier item de notre listView
-        map = new HashMap<String, String>();
-        //on insère un élément titre que l'on récupérera dans le textView titre créé dans le fichier affichageitem.xml
-        map.put("pseudo", "Word");
-        //on insère un élément description que l'on récupérera dans le textView description créé dans le fichier affichageitem.xml
-        map.put("nombre amis", "Editeur de texte");
-        //on insère la référence à l'image (converti en String car normalement c'est un int) que l'on récupérera dans l'imageView créé dans le fichier affichageitem.xml
-        map.put("photo", String.valueOf(R.drawable.maphoto));
-        //enfin on ajoute cette hashMap dans la arrayList
-        listItem.add(map);*/
- 
-        //On refait la manip plusieurs fois avec des données différentes pour former les items de notre ListView
- 
-        map = new HashMap<String, String>();
-        map.put("pseudo", "Shane");
-        map.put("nombre amis", "nombre amis");
-        map.put("photo", String.valueOf(drawable.shodoshane));
-        listItem.add(map);
-        
-        map = new HashMap<String, String>();
-        map.put("pseudo", "Modo");
-        map.put("nombre amis", "nombre amis");
-        map.put("photo", String.valueOf(drawable.shodomodo));
-        listItem.add(map);
- 
 
- 
-        //Création d'un SimpleAdapter qui se chargera de mettre les items présents dans notre list (listItem) dans la vue affichageitem
-        SimpleAdapter mSchedule = new SimpleAdapter (this.getBaseContext(), listItem, R.layout.affiche_amis,
-               new String[] {"pseudo", "nombre amis", "photo"}, new int[] {R.id.pseudo, R.id.nombreamis, R.id.maphoto});
- 
-        //On attribue à notre listView l'adapter que l'on vient de créer
-        maListViewPerso.setAdapter(mSchedule);
- 
+        listAmis = (ListView) findViewById(R.id.listAmis);
+        List<String> listNoms = new ArrayList<>();
+        listNoms.add("Lena");
+        listNoms.add("Marie-Anne");
+        listNoms.add("Maud");
+        listNoms.add("Shane");
+
+        ArrayAdapter<String> listAdapterTitle = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,listNoms);
+        listAmis.setAdapter(listAdapterTitle);
+
+
+
+
     }
 
     @Override

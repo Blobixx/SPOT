@@ -1,7 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#000000"
     android:orientation="horizontal" >
 
     
@@ -32,7 +31,7 @@
         android:orientation="vertical"
         android:paddingLeft="10dp" >
 
-        <EditText
+        <TextView
             android:id="@+id/pseudo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +40,6 @@
                     android:textSize="9sp"
                     android:layout_gravity="center_vertical|center_horizontal"
             android:hint="pseudo" />
-
         <EditText
             android:id="@+id/nombreamis"
             android:layout_width="match_parent"

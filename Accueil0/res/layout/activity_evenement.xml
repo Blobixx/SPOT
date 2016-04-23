@@ -11,16 +11,17 @@
             android:orientation="horizontal" >
 
     <TextView
-        android:id="@+id/editText1"
+        android:id="@+id/titreEvenement"
         android:layout_width="249dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="left"
         android:ems="10"
-        android:text="@string/nomEvent"
         android:textStyle="bold"
         android:textColor="#6D071A"
         android:textSize="25sp" />
-      
+
+
+
     <ImageButton
         android:id="@+id/button4"
         android:layout_width="65dp"
@@ -34,6 +35,17 @@
 
   
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/motCle"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:ems="10"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="421dp"
@@ -56,7 +68,7 @@
             
 
             <TextView
-                android:id="@+id/editText2"
+                android:id="@+id/description"
                 android:layout_marginTop="10dp"
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"

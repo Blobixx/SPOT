@@ -4,14 +4,38 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.marieanne.spot.Data.Event;
 
 
 public class Evenement extends Activity {
+
+    private static Event event;
+    private TextView titre;
+    private ImageView image;
+    private TextView description;
+    private TextView motCle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evenement);
+
+
+        titre = (TextView) findViewById(R.id.titreEvenement);
+        titre.setText(event.getTitle());
+        image = (ImageView) findViewById(R.id.imageEvent);
+        image.setImageResource(event.getPicture());
+        description = (TextView) findViewById(R.id.description);
+        description.setText(event.getDescription());
+        motCle = (TextView) findViewById(R.id.motCle);
+        motCle.setText(event.getMotClé());
+
+
+
     }
 
 
@@ -36,5 +60,9 @@ public class Evenement extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public static void changeEvent ( Event nEvent) {
+        event = nEvent;
     }
 }
